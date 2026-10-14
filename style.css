@@ -1,11 +1,22 @@
-/* ===== Variables de color (cambia aquí y se aplica en todo) ===== */
+/* ===== Variables de color ===== */
 :root {
-    --bg: #111827;
-    --surface: #1f2937;
-    --text: #e5e7eb;
-    --muted: #9ca3af;
-    --accent: #93c5fd;
-    --border: #1f2937;
+    color-scheme: dark;
+    --fondo: #111827;
+    --superficie: #1f2937;
+    --texto: #e5e7eb;
+    --subtexto: #9ca3af;
+    --acento: #93c5fd;
+    --borde: #1f2937;
+}
+
+body.modo-claro {
+    color-scheme: light;
+    --fondo: #ffffff;
+    --superficie: #f3f4f6;
+    --texto: #1f2937;
+    --subtexto: #6b7280;
+    --acento: #1d4ed8;
+    --borde: #e5e7eb;
 }
 
 /* ===== Base ===== */
@@ -16,10 +27,11 @@ html {
 
 body {
     font-family: system-ui, sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: var(--fondo);
+    color: var(--texto);
     margin: 0;
     line-height: 1.6;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* ===== Cabecera ===== */
@@ -34,7 +46,7 @@ header h1 {
 
 header > p {
     margin: 0 0 1.5rem;
-    color: var(--muted);
+    color: var(--subtexto);
 }
 
 /* ===== Navegación ===== */
@@ -50,11 +62,27 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--accent);
+    color: var(--acento);
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* ===== Botón de cambio de modo ===== */
+#boton-modos {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--superficie);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#boton-modos:hover {
+    border-color: var(--acento);
 }
 
 /* ===== Contenido ===== */
@@ -68,7 +96,7 @@ section {
     padding: 2.5rem 0;
     /* Evita que el título quede tapado al saltar con las anclas */
     scroll-margin-top: 1rem;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--borde);
 }
 
 section:last-child {
@@ -76,17 +104,18 @@ section:last-child {
 }
 
 h2 {
-    color: var(--accent);
+    color: var(--acento);
     margin-top: 0;
 }
 
 a {
-    color: var(--accent);
+    color: var(--acento);
 }
 
 /* ===== Accesibilidad: foco visible con teclado ===== */
-a:focus-visible {
-    outline: 2px solid var(--accent);
+a:focus-visible,
+#boton-modos:focus-visible {
+    outline: 2px solid var(--acento);
     outline-offset: 3px;
     border-radius: 2px;
 }
@@ -95,6 +124,6 @@ a:focus-visible {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--surface);
-    color: var(--muted);
+    background-color: var(--superficie);
+    color: var(--apagado);
 }
