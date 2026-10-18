@@ -55,12 +55,12 @@ Los colores están centralizados en las variables de `:root` al principio de `st
 
 ```css
 :root {
-    --bg: #111827;       /* Fondo */
-    --surface: #1f2937;  /* Superficies (pie) */
-    --text: #e5e7eb;     /* Texto principal */
-    --muted: #9ca3af;    /* Texto secundario */
-    --accent: #93c5fd;   /* Enlaces y títulos */
-    --border: #1f2937;   /* Separadores */
+  --bg: #111827; /* Fondo */
+  --surface: #1f2937; /* Superficies (pie) */
+  --text: #e5e7eb; /* Texto principal */
+  --muted: #9ca3af; /* Texto secundario */
+  --accent: #93c5fd; /* Enlaces y títulos */
+  --border: #1f2937; /* Separadores */
 }
 ```
 
