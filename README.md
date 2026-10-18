@@ -6,14 +6,25 @@ Portafolio personal de una sola página, hecho con HTML y CSS puros (sin framewo
 
 - **Inicio** — presentación breve.
 - **Sobre mí** — formación (DAW) y herramientas con las que trabajo (Linux y Git).
-- **Proyectos** — en construcción; irá listando los trabajos destacados.
+- **Proyectos** — proyectos terminados, con enlace a la demo y al código.
 - **Contacto** — correo electrónico.
+
+## Proyectos
+
+### [App del Tiempo](https://sburgos28.github.io/app-tiempo/)
+
+Aplicación web para consultar el tiempo de una ciudad. Muestra temperatura, humedad y probabilidad de lluvia, con iconos y un fondo que cambia entre día y noche.
+
+- **Demo:** https://sburgos28.github.io/app-tiempo/
+- **Código:** https://github.com/sburgos28/app-tiempo
+- **Tecnologías:** HTML, CSS, JavaScript y OpenWeatherMap API.
 
 ## Tecnologías
 
 - HTML5 semántico (`header`, `nav`, `main`, `section`, `footer`).
-- CSS3: variables de color personalizadas, Flexbox y `scroll-behavior: smooth` para la navegación por anclas.
-- Sin JavaScript, sin build ni gestor de paquetes.
+- CSS3: variables de color personalizadas, Flexbox, Grid y `scroll-behavior: smooth` para la navegación por anclas.
+- JavaScript para el cambio de modo claro/oscuro.
+- Sin frameworks, build ni gestor de paquetes.
 
 ## Estructura
 
@@ -21,6 +32,8 @@ Portafolio personal de una sola página, hecho con HTML y CSS puros (sin framewo
 portfolio/
 ├── index.html    # Toda la página
 ├── style.css     # Estilos
+├── script.js     # Cambio de modo claro/oscuro
+├── img/          # Capturas de los proyectos
 └── README.md
 ```
 
@@ -53,10 +66,9 @@ Los colores están centralizados en las variables de `:root` al principio de `st
 
 ## Pendiente
 
-- Añadir los proyectos a la sección correspondiente.
 - Enlazar un perfil de GitHub y LinkedIn en el pie.
 - Añadir una captura de pantalla del resultado en este README.
-- Valorar un modo claro/oscuro.
+- Seguir añadiendo proyectos a la sección de proyectos.
 
 ## Contacto
 
