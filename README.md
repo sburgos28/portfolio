@@ -11,6 +11,14 @@ Portafolio personal de una sola página, hecho con HTML y CSS puros (sin framewo
 
 ## Proyectos
 
+### [Lista Personal](https://sburgos28.github.io/lista-personal/)
+
+Gestor de tareas con prioridades, filtros, edición y progreso. Incluye modo oscuro por defecto, modo claro opcional y persistencia en el navegador.
+
+- **Demo:** https://sburgos28.github.io/lista-personal/
+- **Código:** https://github.com/sburgos28/lista-personal
+- **Tecnologías:** HTML, CSS, JavaScript y localStorage.
+
 ### [App del Tiempo](https://sburgos28.github.io/app-tiempo/)
 
 Aplicación web para consultar el tiempo de una ciudad. Muestra temperatura, humedad y probabilidad de lluvia, con iconos y un fondo que cambia entre día y noche.
