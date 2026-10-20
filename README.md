@@ -6,7 +6,7 @@ Portafolio personal de una sola página, hecho con HTML y CSS puros (sin framewo
 
 - **Inicio** — presentación breve.
 - **Sobre mí** — formación (DAW) y herramientas con las que trabajo (Linux y Git).
-- **Proyectos** — proyectos terminados, con enlace a la demo y al código.
+- **Proyectos** — proyectos terminados, con enlace al código y, cuando hay demo, también a ella.
 - **Contacto** — correo electrónico.
 
 ## Proyectos
@@ -27,12 +27,20 @@ Aplicación web para consultar el tiempo de una ciudad. Muestra temperatura, hum
 - **Código:** https://github.com/sburgos28/app-tiempo
 - **Tecnologías:** HTML, CSS, JavaScript y OpenWeatherMap API.
 
+### [BookShelf](https://github.com/sburgos28/BookShelf)
+
+API REST para gestionar una biblioteca personal de libros. Incluye CRUD completo, validaciones, DTOs, documentación Swagger, migraciones con Entity Framework Core y una interfaz web mínima.
+
+- **Código:** https://github.com/sburgos28/BookShelf
+- **Tecnologías:** C#, ASP.NET Core, Entity Framework Core, MySQL, Swagger, HTML, CSS y JavaScript.
+
 ## Tecnologías
 
 - HTML5 semántico (`header`, `nav`, `main`, `section`, `footer`).
 - CSS3: variables de color personalizadas, Flexbox, Grid y `scroll-behavior: smooth` para la navegación por anclas.
 - JavaScript para el cambio de modo claro/oscuro.
-- Sin frameworks, build ni gestor de paquetes.
+- C#, ASP.NET Core, Entity Framework Core y MySQL en el proyecto BookShelf.
+- El portfolio en sí no usa frameworks, build ni gestor de paquetes.
 
 ## Estructura
 
