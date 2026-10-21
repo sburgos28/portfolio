@@ -12,16 +12,28 @@ function aplicarModo(esClaro) {
   }
 }
 
-if (localStorage.getItem(claveModo) === "claro") {
+function leerModo() {
+  try {
+    return localStorage.getItem(claveModo);
+  } catch {
+    return null;
+  }
+}
+
+function guardarModo(modo) {
+  try {
+    localStorage.setItem(claveModo, modo);
+  } catch {
+    // Sin persistencia, el cambio de tema sigue funcionando en la sesión.
+  }
+}
+
+if (leerModo() === "claro") {
   aplicarModo(true);
 }
 
 botonModos.addEventListener("click", () => {
-  if (body.classList.contains("modo-claro")) {
-    localStorage.setItem(claveModo, "oscuro");
-    aplicarModo(false);
-  } else {
-    localStorage.setItem(claveModo, "claro");
-    aplicarModo(true);
-  }
+  const esClaro = !body.classList.contains("modo-claro");
+  aplicarModo(esClaro);
+  guardarModo(esClaro ? "claro" : "oscuro");
 });

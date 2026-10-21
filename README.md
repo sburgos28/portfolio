@@ -1,13 +1,13 @@
-# Portafolio — Santiago Burgos
+# Portafolio de Santiago Burgos
 
 Portafolio personal de una sola página, hecho con HTML y CSS puros (sin frameworks ni dependencias). Es la base sobre la que iré construyendo el resto: por ahora sirve como presentación y como escaparate de los proyectos que vaya terminando.
 
 ## Secciones
 
-- **Inicio** — presentación breve.
-- **Sobre mí** — formación (DAW) y herramientas con las que trabajo (Linux y Git).
-- **Proyectos** — proyectos terminados, con enlace al código y, cuando hay demo, también a ella.
-- **Contacto** — correo electrónico.
+- **Inicio**: presentación breve.
+- **Sobre mí**: formación (DAW) y herramientas con las que trabajo (Linux y Git).
+- **Proyectos**: proyectos terminados, con enlace al código y, cuando hay demo, también a ella.
+- **Contacto**: correo electrónico.
 
 ## Proyectos
 
@@ -71,12 +71,12 @@ Los colores están centralizados en las variables de `:root` al principio de `st
 
 ```css
 :root {
-  --bg: #111827; /* Fondo */
-  --surface: #1f2937; /* Superficies (pie) */
-  --text: #e5e7eb; /* Texto principal */
-  --muted: #9ca3af; /* Texto secundario */
-  --accent: #93c5fd; /* Enlaces y títulos */
-  --border: #1f2937; /* Separadores */
+  --fondo: #111827; /* Fondo */
+  --superficie: #1f2937; /* Superficies (pie) */
+  --texto: #e5e7eb; /* Texto principal */
+  --subtexto: #9ca3af; /* Texto secundario */
+  --acento: #93c5fd; /* Enlaces y títulos */
+  --borde: #1f2937; /* Separadores */
 }
 ```
 
@@ -88,4 +88,4 @@ Los colores están centralizados en las variables de `:root` al principio de `st
 
 ## Contacto
 
-Santiago Burgos — [@sburgos28](https://github.com/sburgos28)
+Santiago Burgos ([@sburgos28](https://github.com/sburgos28))

@@ -14,7 +14,7 @@ body.modo-claro {
   --fondo: #ffffff;
   --superficie: #f3f4f6;
   --texto: #1f2937;
-  --subtexto: #6b7280;
+  --subtexto: #5b6472;
   --acento: #1d4ed8;
   --borde: #e5e7eb;
 }
@@ -34,6 +34,10 @@ body {
   transition:
     background-color 0.25s ease,
     color 0.25s ease;
+}
+
+button {
+  font: inherit;
 }
 
 /* ===== Cabecera ===== */
@@ -56,13 +60,17 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: clamp(0.75rem, 3vw, 1.5rem);
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.2rem;
   text-decoration: none;
   color: var(--acento);
 }
@@ -74,11 +82,12 @@ nav a:hover {
 /* ===== Botón de cambio de modo ===== */
 #boton-modos {
   display: block;
+  min-height: 44px;
   margin: 1rem auto 0;
   padding: 0.5rem 1rem;
   background-color: var(--superficie);
   color: var(--texto);
-  border: 1px solid var(--borde);
+  border: 1px solid #6b7280;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -179,13 +188,16 @@ a {
 }
 
 .proyecto-enlaces a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-weight: 600;
 }
 
 /* ===== Accesibilidad: foco visible con teclado ===== */
 a:focus-visible,
 #boton-modos:focus-visible {
-  outline: 2px solid var(--acento);
+  outline: 3px solid var(--acento);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -196,4 +208,14 @@ footer {
   padding: 1rem;
   background-color: var(--superficie);
   color: var(--subtexto);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    transition: none;
+  }
 }
